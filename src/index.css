@@ -125,6 +125,23 @@ section {
     transition: .3s;
     
 }
+.bg-custom-image {
+    position: relative;
+    background-image: url('/public/map.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .bg-custom-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgb(222, 222, 222), black);
+    opacity: 0.75; 
+    z-index: 1;
+  }
+  
 .svg-btn{
     display: inline-block;
     padding: .5rem 0.5rem;
