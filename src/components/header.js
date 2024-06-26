@@ -62,16 +62,15 @@ export default function Header() {
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 start-0 flex items-center sd-3 pointer-events-none">
-                    
-                    <img src="/search.png" height={20} width={20} className="sd:hidden sd:focus:hidden "/>
+                 <img src="/search.png" height={20} width={20}/>
                   </div>
                   <input
                     type="search"
                     id="default-search"
                     className="block w-full p-4 sd-10 text-sm  border-b-2 border-t-0 border-r-0 border-l-0
-             border-gray-300 text-orange-500 ring-0 hover:ring-0 focus:border-orange-500 focus:border-b-4 focus:ring-0 transition-all duration-500 translate-x-8 sd:duration-0 sd:focus:translate-x-0 focus:translate-x-8 
+             border-gray-300 text-[#F84525] ring-0 hover:ring-0 focus:border-[#F84525] focus:border-b-4 focus:ring-0 transition-all duration-500  sd:duration-0  
              "
-                    placeholder="What are you looking for ?"
+                    placeholder="&nbsp;&nbsp;&nbsp;What are you looking for ?"
                     required
                   />
                 </div>
@@ -84,29 +83,29 @@ export default function Header() {
                   Search Location
                 </label>
                 <div className="relative">
-                  <div className="absolute inset-y-0 start-0 flex items-center sd-3 pointer-events-none transition-all duration-500 focus:translate-x-8">
-                  <img src="location.png" height={25} width={25} className="sd:-translate-x-0 sd:focus:-translate-x-4"/>
+                  <div className="absolute inset-y-0 start-0 flex items-center sd-3 pointer-events-none transition-all duration-500 ">
+                  <img src="location.png" height={23} width={23} className="z-50"/>
                   </div>
                   <div class="relative">
                     <select
                       id="default-search"
-                      class="block w-full p-4 sd-10 text-sm translate-x-8 sd:focus:translate-x-0 border-b-2 border-t-0 border-r-0 border-l-0 border-gray-300 text-orange-500 hover:ring-0 focus:border-orange-500 focus:border-b-4 focus:ring-0 transition-all duration-500 focus:translate-x-8"
+                      class="block w-full p-4 sd-10 text-sm   border-b-2 border-t-0 border-r-0 border-l-0 border-gray-300 text-[#F84525] hover:ring-0 focus:border-[#F84525] focus:border-b-4 focus:ring-0 transition-all duration-500 "
                       required
                     >
                       <option value="hjjk"   >
-                      Paris, Italy
+                      &nbsp;&nbsp;&nbsp; Paris, Italy
                       </option>
 
 
 
 
                       <option value="dxfgyhbjk">
-                     Ohio
+                      &nbsp;&nbsp;&nbsp;Ohio
                       </option>
                       <option value="ytfdcghbn">
-                      London
+                      &nbsp;&nbsp;&nbsp;London
                       </option>
-                      <option value="jnm,m">London</option>
+                      <option value="jnm,m">&nbsp;&nbsp;&nbsp;London</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                       <svg
@@ -126,7 +125,7 @@ export default function Header() {
                   </div>
                 </div>
               </form>
-              <div className="w-[20%] sd:w-full p-3 mx-auto bg-orange-500 text-center text-white rounded-3xl">
+              <div className="w-[20%] sd:w-full p-3 mx-auto bg-[#F84525] text-center text-white rounded-3xl">
                 Search Places
               </div>
 
@@ -134,6 +133,7 @@ export default function Header() {
           </div>
         </div>
       </div>
+      
     </>
   );
 }
